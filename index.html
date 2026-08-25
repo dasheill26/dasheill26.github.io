@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dasheill Vas — Software Engineer</title>
+<meta name="description" content="Software Engineering graduate building agentic AI systems, computer vision applications, and full-stack platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #151b23; --panel-hover: #1a212b; --border: #262d38;
+    --text: #e8ebf0; --muted: #8b93a1;
+    --accent: #5b8def; --accent-dim: rgba(91,141,239,0.12);
+    --good: #4dd68c;
+    --display: "Space Grotesk", sans-serif; --body: "Inter", sans-serif; --mono: "JetBrains Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--text); font-family: var(--body); margin: 0;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+
+  header { margin-bottom: 3.5rem; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.8rem; color: var(--accent); text-transform: uppercase;
+    letter-spacing: 0.08em; margin-bottom: 0.8rem; display: block;
+  }
+  h1 {
+    font-family: var(--display); font-size: 2.6rem; font-weight: 700; margin: 0 0 0.6rem;
+    letter-spacing: -0.02em; line-height: 1.15;
+  }
+  .tagline { color: var(--muted); font-size: 1.1rem; max-width: 560px; margin: 0 0 1.6rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+  .link-btn {
+    display: inline-flex; align-items: center; gap: 0.4rem; background: var(--panel);
+    border: 1px solid var(--border); color: var(--text); text-decoration: none;
+    padding: 0.55rem 1rem; border-radius: 8px; font-size: 0.9rem; font-weight: 500;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .link-btn:hover { border-color: var(--accent); background: var(--panel-hover); }
+  .link-btn.primary { background: var(--accent); border-color: var(--accent); color: #061224; font-weight: 600; }
+  .link-btn.primary:hover { opacity: 0.9; }
+
+  section { margin-bottom: 3rem; }
+  h2 {
+    font-family: var(--display); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--muted); border-bottom: 1px solid var(--border);
+    padding-bottom: 0.8rem; margin: 0 0 1.4rem;
+  }
+
+  .project {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+    padding: 1.6rem 1.7rem; margin-bottom: 1.1rem;
+  }
+  .project-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem; }
+  .project h3 { font-family: var(--display); font-size: 1.25rem; font-weight: 600; margin: 0; }
+  .project .tag {
+    font-family: var(--mono); font-size: 0.72rem; color: var(--good); background: rgba(77,214,140,0.1);
+    border: 1px solid rgba(77,214,140,0.3); padding: 0.15rem 0.55rem; border-radius: 999px;
+  }
+  .project p.desc { color: var(--muted); font-size: 0.95rem; margin: 0.4rem 0 0.9rem; }
+  .stack {
+    font-family: var(--mono); font-size: 0.78rem; color: var(--muted); margin-bottom: 1rem;
+  }
+  .project-links { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .project-links a {
+    font-size: 0.85rem; font-weight: 600; color: var(--accent); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 0.3rem;
+  }
+  .project-links a:hover { text-decoration: underline; }
+  .project-links .sep { color: var(--border); }
+
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.9rem;
+  }
+  .skill-cat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; }
+  .skill-cat .label { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; display: block; }
+  .skill-cat .items { font-size: 0.88rem; color: var(--text); }
+
+  footer {
+    border-top: 1px solid var(--border); padding-top: 1.6rem; color: var(--muted); font-size: 0.88rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .wrap { padding: 3rem 1.2rem 4rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="eyebrow">Software Engineer &middot; Swindon, UK</span>
+    <h1>Dasheill Vas</h1>
+    <p class="tagline">Software Engineering graduate building agentic AI systems, computer vision applications, and full-stack platforms — tested, deployed, and documented end to end, not just prototyped.</p>
+    <div class="links">
+      <a class="link-btn primary" href="mailto:dasheillknicxvas@gmail.com">Email me</a>
+      <a class="link-btn" href="https://github.com/dasheill26" target="_blank">GitHub</a>
+      <a class="link-btn" href="https://linkedin.com/in/dasheill-knicx-vas-417705337" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Market Signal Lab</h3>
+        <span class="tag">Live</span>
+      </div>
+      <p class="desc">A full-stack time-series ML forecasting app for stocks, forex, and gold — React frontend, Flask + WebSocket backend, a gradient-boosted model on manually implemented technical indicators, and honest walk-forward backtested accuracy shown next to every prediction. Compares three model families under identical methodology, tunes hyperparameters via time-series cross-validation, and checks whether the model's confidence scores are actually trustworthy — deliberately not a trading-signal generator.</p>
+      <div class="stack">Python &middot; React &middot; Flask &middot; Flask-SocketIO &middot; scikit-learn &middot; Docker &middot; GitHub Actions CI/CD</div>
+      <div class="project-links">
+        <a href="https://market-signal-lab-yspy.onrender.com" target="_blank">Live demo &rarr;</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/dasheill26/market-signal-lab" target="_blank">Source code &rarr;</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Lead Reconciliation Agent</h3>
+        <span class="tag">Live</span>
+      </div>
+      <p class="desc">An autonomous AI agent that reconciles sales lead data across three independent, conflicting sources — CRM, email inbox, and web-scraped prospects — combining rules-based trust logic with cost-gated LLM escalation via the Anthropic Claude API. Tracks and reports the real cost of every decision it makes.</p>
+      <div class="stack">Python &middot; Flask &middot; Anthropic Claude API &middot; Docker &middot; GitHub Actions CI/CD &middot; pytest</div>
+      <div class="project-links">
+        <a href="https://lead-reconciliation-agent.onrender.com" target="_blank">Live demo &rarr;</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/dasheill26/lead-reconciliation-agent" target="_blank">Source code &rarr;</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Face Recognition Studio</h3>
+        <span class="tag">Live</span>
+      </div>
+      <p class="desc">A full-stack computer vision application performing face detection, verification, identification, and demographic/emotion analysis — built on OpenCV and DeepFace, supporting both webcam and file-upload input, with a tiered deployment architecture designed around measured memory profiling.</p>
+      <div class="stack">Python &middot; Flask &middot; OpenCV &middot; DeepFace &middot; Docker &middot; GitHub Actions CI/CD</div>
+      <div class="project-links">
+        <a href="https://face-recognition-studio.onrender.com" target="_blank">Live demo &rarr;</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/dasheill26/face-recognition-studio" target="_blank">Source code &rarr;</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>DriveSense AI</h3>
+        <span class="tag">Live</span>
+      </div>
+      <p class="desc">An AI-powered vehicle diagnostics platform combining OBD-II telemetry, conversational troubleshooting, and predictive maintenance into a single pipeline — integrating three AI models (Ollama, Whisper, LLaVA) alongside rule-based fault-code interpretation for context-aware diagnostic guidance.</p>
+      <div class="stack">Python &middot; Flask &middot; SQLite &middot; Ollama &middot; Whisper &middot; LLaVA &middot; OBD-II</div>
+      <div class="project-links">
+        <a href="https://drivesenseai.onrender.com" target="_blank">Live demo &rarr;</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/dasheill26/DriveSenseAI" target="_blank">Source code &rarr;</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Dasheill's Corner</h3>
+      </div>
+      <p class="desc">A full-stack cloud restaurant ordering application deployed to Google Cloud, with authentication, menu management, checkout, admin controls, and a points-based loyalty system — covered by 15+ automated tests across pytest and JUnit.</p>
+      <div class="stack">Python &middot; Flask &middot; SQL &middot; Google App Engine &middot; Firestore &middot; pytest &middot; JUnit</div>
+      <div class="project-links">
+        <a href="https://github.com/dasheill26/dasheills-corner" target="_blank">Source code &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-cat">
+        <span class="label">Languages</span>
+        <div class="items">Python, SQL, Java, C#, JavaScript, HTML5, CSS3</div>
+      </div>
+      <div class="skill-cat">
+        <span class="label">AI / ML</span>
+        <div class="items">TensorFlow, Computer Vision, LLM Integration, Agentic AI Systems, Time-Series Forecasting, NLP</div>
+      </div>
+      <div class="skill-cat">
+        <span class="label">Web &amp; Cloud</span>
+        <div class="items">React, Flask, WebSockets, REST APIs, Docker, CI/CD, Google Cloud, Render</div>
+      </div>
+      <div class="skill-cat">
+        <span class="label">Testing &amp; QA</span>
+        <div class="items">pytest, JUnit, Automated Testing, GitHub Actions</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    BSc (Hons) Software Engineering, Bournemouth University (2:1) &middot; Swindon, United Kingdom<br>
+    <a href="mailto:dasheillknicxvas@gmail.com">dasheillknicxvas@gmail.com</a> &middot; <a href="https://github.com/dasheill26" target="_blank">github.com/dasheill26</a>
+  </footer>
+
+</div>
+</body>
+</html>
