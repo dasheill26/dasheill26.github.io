@@ -61,6 +61,9 @@
     font-family: var(--mono); font-size: 0.72rem; color: var(--good); background: rgba(77,214,140,0.1);
     border: 1px solid rgba(77,214,140,0.3); padding: 0.15rem 0.55rem; border-radius: 999px;
   }
+  .project .tag.research {
+    color: var(--accent); background: var(--accent-dim); border-color: rgba(91,141,239,0.3);
+  }
   .project p.desc { color: var(--muted); font-size: 0.95rem; margin: 0.4rem 0 0.9rem; }
   .stack {
     font-family: var(--mono); font-size: 0.78rem; color: var(--muted); margin-bottom: 1rem;
@@ -108,6 +111,18 @@
 
   <section>
     <h2>Projects</h2>
+
+    <div class="project">
+      <div class="project-top">
+        <h3>Footprint-Based Sex Classification</h3>
+        <span class="tag research">Research</span>
+      </div>
+      <p class="desc">Deep learning coursework (COMP6071): binary sex classification from footprint images for forensic triage. Progressed from from-scratch MLP/CNN baselines through ten systematic, hypothesis-driven experiments to a final transfer-learning model, with Grad-CAM explainability and an extensive, honest treatment of why a 0.94+ ROC-AUC model still shouldn't be used as standalone forensic evidence. The most interesting finding: a carefully-tuned, smaller from-scratch CNN actually outperformed larger pretrained backbones like EfficientNet-B3 on the private leaderboard.</p>
+      <div class="stack">Python &middot; PyTorch &middot; torchvision &middot; timm &middot; Grad-CAM &middot; scikit-learn</div>
+      <div class="project-links">
+        <a href="https://github.com/dasheill26/footprint-classification" target="_blank">Source & full analysis &rarr;</a>
+      </div>
+    </div>
 
     <div class="project">
       <div class="project-top">
@@ -186,7 +201,7 @@
       </div>
       <div class="skill-cat">
         <span class="label">AI / ML</span>
-        <div class="items">TensorFlow, Computer Vision, LLM Integration, Agentic AI Systems, Time-Series Forecasting, NLP</div>
+        <div class="items">PyTorch, TensorFlow, Computer Vision, Explainable AI (Grad-CAM), Transfer Learning, LLM Integration, Time-Series Forecasting, Agentic AI Systems, NLP</div>
       </div>
       <div class="skill-cat">
         <span class="label">Web &amp; Cloud</span>
